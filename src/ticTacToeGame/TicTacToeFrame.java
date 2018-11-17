@@ -6,7 +6,7 @@ import java.awt.GridLayout;
 
 public class TicTacToeFrame extends JFrame {
     JPanel jPanel = new JPanel();
-    TicTacToeButton buttons[] = new TicTacToeButton[9];
+    TicTacToeButton buttons[] = new TicTacToeButton[9]; // Przycisk to też klasa możemy go umieścić w tablicy
 
     public static void main(String args[]) {
         new TicTacToeFrame();
@@ -17,7 +17,7 @@ public class TicTacToeFrame extends JFrame {
         setSize(500, 500);
         setResizable(false);    // przy ustawieniu na true programista ma więcej roboty z skalowaniem obrazów
         setDefaultCloseOperation(EXIT_ON_CLOSE); // spróbuj zakomentować i zamknąć Frame krzyżykiem
-        jPanel.setLayout(new GridLayout(3, 3));
+        jPanel.setLayout(new GridLayout(3, 3)); // GridLayout - tabelka
         for (int i = 0; i < buttons.length; i++) {
             buttons[i] = new TicTacToeButton();
             jPanel.add(buttons[i]);

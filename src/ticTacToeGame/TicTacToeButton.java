@@ -5,6 +5,7 @@ import javax.swing.ImageIcon;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+// Tworzymy wyspejcalizowany pod nasze potrzeby przycisk
 public class TicTacToeButton extends JButton implements ActionListener {
     ImageIcon xImageIcon, oImageIcon;
     byte clickCounter = 0;
